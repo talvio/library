@@ -1,0 +1,947 @@
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:2
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                          |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                   |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                 |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute          |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                  |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                    |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                    |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                       |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                   |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                   |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O: I am listening to your command: 
+I:a
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                          |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                       |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                   |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                 |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                   |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                    |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                    |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                  |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute          |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O: I am listening to your command: 
+I:f
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                          |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                       |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                   |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                 |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                   |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                    |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                    |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                  |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute          |
+O:
+O: What words shall I use to filter the titles or authors for you: 
+I:the
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                          |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                       |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                 |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                   |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                    |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                   |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute          |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O: I am listening to your command: 
+I:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:0
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:1
+O:
+O:What is the name of the book: 
+I:Vajracchedikā Prajñāpāramitā Sūtra
+O:
+O:What is the name of the author: 
+I:Unknown
+O:
+O:Valid publication year is between 1 and 2025.
+O:
+O:What is the publication year: 
+I:868
+O:
+O:What is status of the book? 
+O: 1 = Available
+O: 2 = Borrowed
+O: 3 = Unknown
+O: Status: 
+I:2
+O:
+O:                 Book title: Vajracchedikā Prajñāpāramitā Sūtra
+O: Book status in the library: Borrowed
+O:      Book publication year: 868
+O:                Book author: Unknown
+O:
+O:  (R)e-enter | (A)ccept |  (C)ancel 
+O:
+O:  I am listening to your command [R]: 
+I:a
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:2
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O: I am listening to your command: 
+I:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:0
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:BOOK ID |S| TITLE                                                                                 | YEAR | AUTHOR                                             |
+O:      3 |A| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:
+O:        (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O:        (B)orrow      | (R)eturn     | Book ID number to view all book details.
+O:

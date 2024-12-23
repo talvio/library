@@ -1,0 +1,31 @@
+BOOK: 1
+Title:  The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts
+Author: Douglas Adams (Autor)
+Year:   2020
+Status: Available
+BOOK_END
+BOOK: 2
+Title:  Freedom: Memoirs 1954 - 2021
+Author: Angela Merkel
+Year:   2024
+Status: Available
+BOOK_END
+BOOK: 3
+Title:  Cat's Cradle
+Author: Kurt Vonnegut
+Year:   2010
+Status: Available
+BOOK_END
+BOOK: 4
+Title:  The Sirens Of Titan
+Author: Kurt Vonnegut
+Year:   1999
+Status: Available
+BOOK_END
+BOOK: 5
+Title:  The Sirens Of Titan
+Author: Kurt Vonnegut
+Year:   1999
+Status: Available
+Unknown: Something Something
+BOOK_END
