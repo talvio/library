@@ -1,11 +1,14 @@
 from typing import Final
+import os
 
 import re
 
-if __name__ == "__main__":
-    MESSAGE_FLASH_TIME: Final = 2
-else:
+#print(os.environ)
+#exit()
+if "PYTEST_VERSION" in os.environ:
     MESSAGE_FLASH_TIME: Final = 0
+else:
+    MESSAGE_FLASH_TIME: Final = 2
 
 
 ## Menu selections

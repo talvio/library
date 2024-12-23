@@ -14,10 +14,10 @@ my_input_fifo = []
 my_observed_output = [""]
 my_recorded_output = [""]
 
-if __name__ == "__main__":
-    STEP_DELAY = 1
-else:
+if "PYTEST_VERSION" in os.environ:
     STEP_DELAY = 0
+else:
+    STEP_DELAY = 1
 
 
 """ InputOutputAndTest captures all print and input commands. 

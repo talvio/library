@@ -284,3 +284,14 @@ O:I am listening to your command:
 I:0
 O:I am listening to your command: 
 I:0
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:0

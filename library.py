@@ -152,6 +152,7 @@ def book_details_control(library, user_interface, book_id):
             new_isbn, new_title, new_author, new_publication_year, new_status = user_interface.ask_book_information(book.title, book.author, book.publication_year, book.status)
             if new_title != None:
                 book.isbn, book.title, book.author, book.publication_year, book.status = new_isbn, new_title, new_author, new_publication_year, new_status
+            user_interface.flash_book_details_and_message(book, "\n Your keyboard is my master!")
     return next_command
 
 """ Controls actions when displaying book list, filtered or full. 
@@ -191,19 +192,18 @@ def book_list_control(library, user_interface, command = None):
         if not command in C.QUIT:
             command = None
 
-def main(library_file=None,io_recording_file=None):
+def main(library_file=None,io_recording_file=None,rerecord=False):
     command_line_arguments = sys.argv[1:]
     if library_file == None and command_line_arguments != []:
         library_file = command_line_arguments.pop(0)
-    elif library_file != None:
-        if not os.path.isfile(library_file): 
-            raise RuntimeError (f"None existent library_file {library_file}")
-    else:
+    elif library_file == None:
         library_file = os.path.normpath(C.LIBRARY_DIR + C.LIBRARY_FILE)
+    if rerecord == "True":
+        rerecord = True
     if io_recording_file == None and command_line_arguments != []:
         io_recording_file = command_line_arguments.pop(0)
     if io_recording_file != None:
-        user_interface = UserInterface(library = None, io_recording_file = io_recording_file, run_recorded = True, record_additional_io = True, rerecord_output = False)
+        user_interface = UserInterface(library = None, io_recording_file = io_recording_file, run_recorded = True, record_additional_io = True, rerecord_output = rerecord)
     else:
         user_interface = UserInterface()
     if not os.path.isfile(library_file): 

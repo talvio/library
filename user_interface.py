@@ -6,7 +6,6 @@ from datetime import datetime
 import library_constants as C
 import time
 from book import Book
-#from my_io import self.io.my_input, self.io.my_print
 from my_io import InputOutputAndTest
 
 ROWS_RESERVED_FOR_BOILERPLATE   = 6
@@ -129,7 +128,7 @@ class UserInterface:
                 book_data_valid = True
             if user_accepts_data in C.CANCEL: 
                 book_data_valid = True
-                C.ISBN_UNDEFINED, title, author, publication_year, status = None, None, None, None, None 
+                title, author, publication_year, status = None, None, None, None 
         return C.ISBN_UNDEFINED, title, author, publication_year, status
     
     """ Asks the user how to filter the book list. 

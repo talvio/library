@@ -93,6 +93,7 @@ def test_save_library():
 
 recorded_library_test_files = [
     ("test_library_10.txt", "test_library_10.recorded"),
+    ("test_library_12.txt", "test_library_12.recorded"),
 ]
 @pytest.mark.parametrize("test_library_file, recorded_test_file", recorded_library_test_files)
 def test_run_recorded_io(test_library_file, recorded_test_file):
