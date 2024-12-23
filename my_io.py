@@ -14,9 +14,10 @@ my_input_fifo = []
 my_observed_output = [""]
 my_recorded_output = [""]
 
-#STEP_DELAY = 1
-STEP_DELAY = 1
-#TYPING_DELAY = 2
+if __name__ == "__main__":
+    STEP_DELAY = 1
+else:
+    STEP_DELAY = 0
 
 
 """ InputOutputAndTest captures all print and input commands. 

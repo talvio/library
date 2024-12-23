@@ -6,6 +6,7 @@ import re
 import shutil
 import time
 import sys
+import filecmp
 
 import library_constants as C
 from user_interface import UserInterface
@@ -115,6 +116,9 @@ class Library:
             book_record = f"BOOK: {book_index}\nTitle:  {book.title}\nAuthor: {book.author}\nYear:   {book.publication_year}\nStatus: {book.status}\nBOOK_END\n"
             f.write(book_record)
         f.close
+        #print("Checking backup! " + self.library_file + " " + self.library_file + ".backup " + str(filecmp.cmp(self.library_file, self.library_file + ".backup", shallow=True)) + "\n\n")
+        if filecmp.cmp(self.library_file, self.library_file + ".backup"):
+            os.remove(self.library_file + ".backup")
 
     """ The user knows the ID of the book in the library and uses this ID in the UI to identify the book. 
         This method returns a reference to the Book with that book_id in the library.
@@ -187,15 +191,19 @@ def book_list_control(library, user_interface, command = None):
         if not command in C.QUIT:
             command = None
 
-def main():
+def main(library_file=None,io_recording_file=None):
     command_line_arguments = sys.argv[1:]
-    if command_line_arguments != []:
+    if library_file == None and command_line_arguments != []:
         library_file = command_line_arguments.pop(0)
+    elif library_file != None:
+        if not os.path.isfile(library_file): 
+            raise RuntimeError (f"None existent library_file {library_file}")
     else:
         library_file = os.path.normpath(C.LIBRARY_DIR + C.LIBRARY_FILE)
-    if command_line_arguments != []:
+    if io_recording_file == None and command_line_arguments != []:
         io_recording_file = command_line_arguments.pop(0)
-        user_interface = UserInterface(None, io_recording_file, run_recorded = True, record_additional_io = True, rerecord_output = False)
+    if io_recording_file != None:
+        user_interface = UserInterface(library = None, io_recording_file = io_recording_file, run_recorded = True, record_additional_io = True, rerecord_output = False)
     else:
         user_interface = UserInterface()
     if not os.path.isfile(library_file): 

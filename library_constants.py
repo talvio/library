@@ -2,7 +2,11 @@ from typing import Final
 
 import re
 
-MESSAGE_FLASH_TIME:     Final = 2
+if __name__ == "__main__":
+    MESSAGE_FLASH_TIME: Final = 2
+else:
+    MESSAGE_FLASH_TIME: Final = 0
+
 
 ## Menu selections
 QUIT:                   Final = (0, "q", "Q", "Quit", "quit")
@@ -46,10 +50,11 @@ ISBN_UNDEFINED:         Final = ""
 ISBN_INVALID:           Final = -1
 
 ## Library file
-LIBRARY_DIR:            Final = "/Users/talvio/Nextcloud/projects/MasterSchool-prework/"
+LIBRARY_DIR:            Final = "./" #"/Users/talvio/Nextcloud/projects/MasterSchool-prework/"
 LIBRARY_FILE:           Final = "library.txt"
 TEST_DATA_DIR:          Final = LIBRARY_DIR + "test_data/"
 
 ## ISBN Regular expression
 REGEXP_VALID_ISBN10 = re.compile(r"^(?:ISBN(?:-10)?:?\ )?(?=[-0-9X\ ]{13}$|[0-9X]{10}$)[0-9]{1,5}[-\ ]?(?:[0-9]+[-\ ]?){2}[0-9X]$")
 REGEXP_VALID_ISBN13 = re.compile(r"^(?:ISBN(?:-13)?:?\ )?(?=[-0-9\ ]{17}$|[0-9]{13}$)97[89][-\ ]?[0-9]{1,5}[-\ ]?(?:[0-9]+[-\ ]?){2}[0-9]$")
+

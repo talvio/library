@@ -47,9 +47,9 @@ def test_randomly_corrupted_library_file():
 
 """ Creates a library test file which is a copy of a valid library file except 
     one line is randomly either 
-     1. duplicated (Author and Title lines are handled ) 
+     1. duplicated 
      2. omitted
-     3. Random text is added without
+     3. Random text is added 
 """
 def make_corrupted_test_library(test_library_file_valid = None, test_data_dir = None, corrupted_test_library_file = None):
     if test_data_dir == None: test_data_dir = C.TEST_DATA_DIR
@@ -91,11 +91,15 @@ def test_save_library():
     test_library = Library(test_library_file_temp)
     test_library.save_library()
 
-def test_run_recorded_io():
-    RUN_RECORDED_SESSION = True
-    RECORD_ADDITIONAL_IO = False
-    RERECORD_OUTPUT = False
-    run_main()
+recorded_library_test_files = [
+    ("test_library_10.txt", "test_library_10.recorded"),
+]
+@pytest.mark.parametrize("test_library_file, recorded_test_file", recorded_library_test_files)
+def test_run_recorded_io(test_library_file, recorded_test_file):
+    test_library_file = os.path.normpath(C.TEST_DATA_DIR + test_library_file)
+    recorded_test_file = os.path.normpath(C.TEST_DATA_DIR + recorded_test_file)
+    run_main(test_library_file, recorded_test_file)
+
 
 
 
