@@ -1,0 +1,108 @@
+BOOK: 1
+Title:  The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts
+Author: Douglas Adams
+Year:   2020
+Status: Borrowed
+BOOK_END
+BOOK: 2
+Title:  Freedom: Memoirs 1954 - 2021
+Author: Angela Merkel
+Year:   2024
+Status: Available
+BOOK_END
+BOOK: 3
+Title:  Cat's Cradle
+Author: Kurt Vonnegut
+Year:   2010
+Status: Borrowed
+BOOK_END
+BOOK: 4
+Title:  The Sirens Of Titan
+Author: Kurt Vonnegut
+Year:   1999
+Status: Available
+BOOK_END
+BOOK: 5
+Title:  The Mercy of Gods
+Author: James S.A. Corey
+Year:   2024
+Status: Available
+BOOK_END
+BOOK: 6
+Title:  The Long Mars
+Author: Terry Pratchett, Stephen Baxter
+Year:   2014
+Status: Available
+BOOK_END
+BOOK: 7
+Title:  Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley
+Author: Brent Underwood
+Year:   2024
+Status: Available
+BOOK_END
+BOOK: 8
+Title:  Roadside Picnic
+Author: Robert Forster
+Year:   1972
+Status: Available
+BOOK_END
+BOOK: 9
+Title:  Desert Star
+Author: Michael Connelly
+Year:   2022
+Status: Available
+BOOK_END
+BOOK: 10
+Title:  Two Kinds of Truth
+Author: Michael Connelly
+Year:   2017
+Status: Available
+BOOK_END
+BOOK: 11
+Title:  The End of Eternity
+Author: Isaac Asimov
+Year:   1955
+Status: Available
+BOOK_END
+BOOK: 12
+Title:  Second Foundation
+Author: Isaac Asimov
+Year:   2019
+Status: Available
+BOOK_END
+BOOK: 13
+Title:  The Martian
+Author: Andy Weir
+Year:   2011
+Status: Available
+BOOK_END
+BOOK: 14
+Title:  Leadership and Self-Deception: Getting Out of the Box
+Author: The Arbinger Institute
+Year:   2010
+Status: UKNOWN
+BOOK_END
+BOOK: 15
+Title:  Die Lady im See
+Author: Raymond Chandler (Autor), Robin Detje (Übersetzer)
+Year:   2022
+Status: Available
+BOOK_END
+BOOK: 16
+Title:  Der große Schlaf
+Author: Raymond Chandler
+Year:   2021
+Status: Available
+BOOK_END
+BOOK: 17
+Title:  Vajracchedikā Prajñāpāramitā Sūtra
+Author: Unknown
+Year:   868
+Status: Borrowed
+BOOK_END
+BOOK: 18
+Title:  Slaughterhouse-Five
+Author: Kurt Vonnegut
+Year:   1991
+Status: Available
+BOOK_END
