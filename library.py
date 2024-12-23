@@ -117,8 +117,8 @@ class Library:
             f.write(book_record)
         f.close
         #print("Checking backup! " + self.library_file + " " + self.library_file + ".backup " + str(filecmp.cmp(self.library_file, self.library_file + ".backup", shallow=True)) + "\n\n")
-        if filecmp.cmp(self.library_file, self.library_file + ".backup"):
-            os.remove(self.library_file + ".backup")
+        #if filecmp.cmp(self.library_file, self.library_file + ".backup"):
+        #    os.remove(self.library_file + ".backup")
 
     """ The user knows the ID of the book in the library and uses this ID in the UI to identify the book. 
         This method returns a reference to the Book with that book_id in the library.
