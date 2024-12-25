@@ -107,6 +107,7 @@ class Library:
         Write new library file with the fresh library data.
     """
     def save_library(self):
+        return
         if os.path.isfile(self.library_file):
             shutil.copyfile(self.library_file, self.library_file + ".backup")
         f = open(self.library_file, 'w', encoding="utf-8")
@@ -216,19 +217,8 @@ def book_list_control(library, user_interface, command = None):
             command = None
 
 def main(library_file=None,io_recording_file=None,rerecord=False):
-    command_line_arguments = sys.argv[1:]
-    if library_file == None and command_line_arguments != []:
-        library_file = command_line_arguments.pop(0)
-    elif library_file == None:
+    if library_file == None:
         library_file = os.path.normpath(C.LIBRARY_DIR + C.LIBRARY_FILE)
-    if rerecord == "True":
-        rerecord = True
-    if io_recording_file == None and command_line_arguments != []:
-        io_recording_file = command_line_arguments.pop(0)
-    if command_line_arguments != []:
-        rerecord = command_line_arguments.pop(0)
-        if rerecord == "True":
-            rerecord = True
     if io_recording_file != None:
         user_interface = UserInterface(library = None, io_recording_file = io_recording_file, run_recorded = True, record_additional_io = True, rerecord_output = rerecord)
     else:
@@ -257,5 +247,17 @@ def main(library_file=None,io_recording_file=None,rerecord=False):
     return None
 
 if __name__ == "__main__":
-    main()
+    library_file, io_recording_file, rerecord = None, None, None
+    command_line_arguments = sys.argv[1:]
+    if command_line_arguments != []: 
+        library_file = command_line_arguments.pop(0)
+    if command_line_arguments != []: 
+        io_recording_file = command_line_arguments.pop(0)
+    if command_line_arguments != []: 
+        rerecord = command_line_arguments.pop(0)
+        if rerecord == "True":
+            rerecord = True
+        else:
+            rerecord = "False"
+    main(library_file, io_recording_file, rerecord)
 

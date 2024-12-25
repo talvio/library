@@ -14,7 +14,7 @@ my_input_fifo = []
 my_observed_output = [""]
 my_recorded_output = [""]
 
-if "PYTEST_VERSION" in os.environ:
+if C.PYTEST_RUNNING:
     STEP_DELAY = 0
 else:
     STEP_DELAY = 1
@@ -105,7 +105,7 @@ class InputOutputAndTest:
         self.my_observed_output[-1] = self.my_observed_output[-1] + question + "\n"
         self.my_observed_output.append("")
         if (self.rerecord_output or self.run_recorded) and self.my_input_fifo != []:
-            if not self.rerecord_output: 
+            if self.rerecord_output != True: 
                 self.compare_output()
             recorded_input = self.my_input_fifo.pop(0)
             print(question + recorded_input)

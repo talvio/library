@@ -12,7 +12,7 @@ ROWS_RESERVED_FOR_BOILERPLATE   = 6
 RESERVED_FOR_COLUMN_GAPS        = 24
 
 DEFAULT_TERMINAL_COLUMNS = 200
-DEFAULT_TERMINAL_ROWS = 52
+DEFAULT_TERMINAL_ROWS = 28
 
 """ 1. User Interface class is the only way for the program to interact with the user.
     It separates the user view and input from 
@@ -23,14 +23,12 @@ class UserInterface:
     def __init__(self, library = None, io_recording_file = None, run_recorded = False, record_additional_io = False, rerecord_output = False):
         self.library = library
         self.filter = None
-        self.sort_column = "Title"
+        self.sort_column = C.TITLE_SORT
+        self.reverse_sort = False
         self.view_list = []
         self.book_list_top_row_index = 0
         self.io = InputOutputAndTest(io_recording_file, run_recorded, record_additional_io, rerecord_output)
-        try:
-            books_fit_in_one_view = os.get_terminal_size()[1] - ROWS_RESERVED_FOR_BOILERPLATE
-        except:
-            books_fit_in_one_view = DEFAULT_TERMINAL_ROWS - ROWS_RESERVED_FOR_BOILERPLATE
+        self.books_fit_in_one_view = 1
 
     """ The menu numbers are slightly changed from the given assignment. 
     0 is save and exit so that it is the easy first choice. 
@@ -59,7 +57,7 @@ class UserInterface:
         return command 
 
     def print_book_list_menu(self):
-        self.io.my_print("\n (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.")
+        self.io.my_print("\n (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.")
  
     def get_command(self, valid_commands, number_is_command = False, default_answer = "", question = " I am listening to your command: "):
         command = self.io.my_input(question) or default_answer
@@ -105,15 +103,17 @@ class UserInterface:
             input_is_valid = False
             while not input_is_valid:
                 if status != "":
-                    status = self.io.my_input(f"\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n Status [{status}] :") or status
+                    status = self.io.my_input(f"\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status [{status}] :") or status
                 else:
-                    status = self.io.my_input("\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n Status: ")
+                    status = self.io.my_input("\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status: ")
                 if status == "1" or status == C.AVAILABLE:
                     status = C.AVAILABLE
                 elif status == "2" or status == C.BORROWED:
                     status = C.BORROWED
                 elif status == "3" or status == C.UNKNOWN:
                     status = C.UNKNOWN
+                elif status == "4" or status == C.REMOVED:
+                    status = C.REMOVED
                 else:
                     status = ""
                 if status in C.VALID_STATUSES:
@@ -140,7 +140,7 @@ class UserInterface:
         self.filter =  self.io.my_input("\n What words shall I use to filter the titles or authors for you: ") or None
 
     """ Applies the self.filter regular expression and filters the only the books where self.filter 
-        regexp is found either in the book title or the author name. 
+        rep is found either in the book title or the author name. 
         self.view_list is a list referring to all or some of the books in 
         self.library.all_books 
     """
@@ -161,58 +161,72 @@ class UserInterface:
         self.view_list is a list referring to all or some of the books in 
         self.library.all_books 
     """
-    def book_sort(self, column = None):
+    def book_sort(self, column = None, reverse_sort=None):
+        if reverse_sort == None: 
+            reverse_sort = self.reverse_sort
+        else:
+            self.reverse_sort = reverse_sort
         if column != None:
             self.sort_column = column
         if self.sort_column == None:
-            self.sort_column = "Title"
+            self.sort_column = C.TITLE
         match self.sort_column:
-            case "Title":
+            case C.TITLE_SORT:
                 def book_sort_title(item):return item.title
                 self.view_list.sort(key=book_sort_title)
-            case "Author":
+            case C.AUTHOR_SORT:
                 def book_sort_author(item):return item.author
                 self.view_list.sort(key=book_sort_author)
-            case "Book_id":
+            case C.BOOK_ID_SORT:
                 def book_sort_book_id(item):return item.book_id
                 self.view_list.sort(key=book_sort_book_id)
+            case C.YEAR_SORT:
+                def book_sort_publication_year(item):return item.publication_year
+                self.view_list.sort(key=book_sort_publication_year)
+        if reverse_sort:
+            self.view_list.reverse()
         self.book_list_top_row_index = 0
 
     """ Sorts self.view_list using the book titles 
         self.view_list is a list referring to all or some of the books in 
         self.library.all_books 
     """
-    def title_sort(self):
-        self.book_sort("Title")
+    def title_sort(self, reverse_sort=None):
+        self.book_sort(C.TITLE_SORT, reverse_sort)
 
     """ Sorts self.view_list using the author names 
         self.view_list is a list referring to all or some of the books in 
         self.library.all_books 
     """
-    def author_sort(self):
-        self.book_sort("Author")
+    def author_sort(self, reverse_sort=None):
+        self.book_sort(C.AUTHOR_SORT, reverse_sort)
 
     """ Sorts self.view_list using the book_id 
         self.view_list is a list referring to all or some of the books in 
         self.library.all_books 
     """
-    def book_id_sort(self):
-        self.book_sort("Book_id")
+    def book_id_sort(self, reverse_sort=None):
+        self.book_sort(C.BOOK_ID_SORT, reverse_sort)
+
+    """ Sorts self.view_list using the publication_year 
+        self.view_list is a list referring to all or some of the books in 
+        self.library.all_books 
+    """
+    def publication_year_sort(self, reverse_sort=None):
+        self.book_sort(C.YEAR_SORT, reverse_sort)
 
     """ Lists books from the library which may or may not be filtered. 
         The filter is stored in self.filter
         The filtered and sorted book list is in self.view_list
     """
     def list_books(self):
-        try:
+        if C.PYTEST_RUNNING or self.io.run_recorded:
+            books_fit_in_one_view = DEFAULT_TERMINAL_ROWS - ROWS_RESERVED_FOR_BOILERPLATE    
+            column_space_for_books   = DEFAULT_TERMINAL_COLUMNS - RESERVED_FOR_COLUMN_GAPS    
+        else:
             books_fit_in_one_view = os.get_terminal_size()[1] - ROWS_RESERVED_FOR_BOILERPLATE
-        except:
-            books_fit_in_one_view = DEFAULT_TERMINAL_ROWS - ROWS_RESERVED_FOR_BOILERPLATE
-        self.books_fit_in_one_view = books_fit_in_one_view
-        try:
             column_space_for_books   = os.get_terminal_size()[0] - RESERVED_FOR_COLUMN_GAPS
-        except:
-            column_space_for_books   = DEFAULT_TERMINAL_COLUMNS - RESERVED_FOR_COLUMN_GAPS
+        self.books_fit_in_one_view = books_fit_in_one_view
         longest_title = 0
         longest_author = 0
 
@@ -305,6 +319,10 @@ class UserInterface:
             self.io.my_print("\n This book is already borrowed!")
             time.sleep(C.MESSAGE_FLASH_TIME)
             return
+        elif book.status != C.AVAILABLE:
+            self.io.my_print("\n This book is currently not available and cannot be borrowed!")
+            time.sleep(C.MESSAGE_FLASH_TIME)
+            return
         do_borrow = "No answer"
         while not do_borrow in C.YES + C.NO + C.CANCEL:
             do_borrow = self.io.my_input(" Do you want to mark this book as borrowed? (Y)es or (N)o ", C.CANCEL)
@@ -332,10 +350,30 @@ class UserInterface:
             self.io.my_print("\n If there is an error in the book information, please edit the book data.")
             time.sleep(C.MESSAGE_FLASH_TIME)
             return
-        do_borrow = "No answer"
-        while not do_borrow in C.YES + C.NO + C.CANCEL:
-            do_borrow = self.io.my_input(" Do you want to mark this book as returned? (Y)es or (N)o ", C.CANCEL)
-        if do_borrow in C.YES:
+        do_return = "No answer"
+        while not do_return in C.YES + C.NO + C.CANCEL:
+            do_return = self.io.my_input(" Do you want to mark this book as returned? (Y)es or (N)o ", C.CANCEL)
+        if do_return in C.YES:
+            return book
+        return None
+
+    """ Ask if the user wants to return the borrowed book. 
+        Return reference to the book if successful and user says Yes. 
+        Otherwise return None.
+    """
+    def remove_book_id(self, book_id = None):
+        book = self.show_book_details(book_id)
+        if book == None:
+            return
+        if book.status == C.REMOVED:
+            self.io.my_print("\n This book is already removed. Logic dictates it cannot be removed twice.")
+            self.io.my_print("\n If there is an error in the book information, please edit the book data.")
+            time.sleep(C.MESSAGE_FLASH_TIME)
+            return
+        do_remove = "No answer"
+        while not do_remove in C.YES + C.NO + C.CANCEL:
+            do_remove = self.io.my_input(" Do you want to mark this book as removed from the library? (Y)es or (N)o ", C.CANCEL)
+        if do_remove in C.YES:
             return book
         return None
 

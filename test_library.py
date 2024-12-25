@@ -16,6 +16,7 @@ from my_io import RUN_RECORDED_SESSION, RECORD_ADDITIONAL_IO, RERECORD_OUTPUT
 TEST_LIBRARY_VALID_1 = "test_library.txt"
 CORRUPTED_TEST_LIBRARY_1 = "corrupted_test_library_1.txt"
 TEMP_LIBRARY_SAVE_FILE = "temp_test_library.txt"
+TEMP_TEST_RECORDING_FILE = "temp_test_recording.txt"
 
 library_test_files = [
     ("test_library_1.txt", "Library file is corrupted for the book number 3 and line 18. BOOK_END tag is missing."),
@@ -91,16 +92,31 @@ def test_save_library():
     test_library = Library(test_library_file_temp)
     test_library.save_library()
 
+
+""" You can record new tests from command line with "./library.py library.txt test_recording.txt"
+    1. opy library.txt and test_recording.txt to test_data folder
+    2. add them to the list recorded_library_test_files below
+    3. next time you run pytest, your previous recording will be rerun. 
+    You don't need to worry about returning the library file to the starting state. Go wild. 
+"""
 recorded_library_test_files = [
     ("test_library_10.txt", "test_library_10.recorded"),
+    ("test_library_11.txt", "test_library_11.recorded"),
     ("test_library_12.txt", "test_library_12.recorded"),
+    ("test_library_13.txt", "test_library_13.recorded"),
+    ("test_library_14.txt", "test_library_14.recorded"),
+    ("test_library_15.txt", "test_library_15.recorded"),
+    ("test_library_16.txt", "test_library_16.recorded"),
 ]
 @pytest.mark.parametrize("test_library_file, recorded_test_file", recorded_library_test_files)
 def test_run_recorded_io(test_library_file, recorded_test_file):
     test_library_file = os.path.normpath(C.TEST_DATA_DIR + test_library_file)
+    test_library_file_temp = os.path.normpath(C.TEST_DATA_DIR + TEMP_LIBRARY_SAVE_FILE)
+    shutil.copyfile(test_library_file, test_library_file_temp)
     recorded_test_file = os.path.normpath(C.TEST_DATA_DIR + recorded_test_file)
-    run_main(test_library_file, recorded_test_file)
-
+    #temp_test_recording_file = os.path.normpath(C.TEST_DATA_DIR + TEMP_TEST_RECORDING_FILE)
+    #shutil.copyfile(recorded_test_file, temp_test_recording_file)
+    assert run_main(test_library_file_temp, recorded_test_file) == None
 
 
 

@@ -4,8 +4,10 @@ import re
 
 if "PYTEST_VERSION" in os.environ:
     MESSAGE_FLASH_TIME: Final = 0
+    PYTEST_RUNNING = True
 else:
     MESSAGE_FLASH_TIME: Final = 2
+    PYTEST_RUNNING = False
 
 
 ## Menu selections

@@ -25,6 +25,7 @@ O:What is status of the book?
 O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
+O: 4 = Removed
 O: Status: 
 I:1
 O:
@@ -69,6 +70,7 @@ O:What is status of the book?
 O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
+O: 4 = Removed
 O: Status: 
 I:3
 O:
@@ -108,6 +110,7 @@ O:What is status of the book?
 O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
+O: 4 = Removed
 O: Status: 
 I:2
 O:
@@ -131,19 +134,37 @@ O:5. Remove book from the library
 O:
 O:I am listening to your command: 
 I:2
-O:BOOK ID |S| TITLE                                          (U)p (D)own 1-3 of 3 | YEAR | AUTHOR                |
-O:      1 |A| dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg |    1 | <sdlkg lkdjg          |
-O:      2 |U| ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg                     |   30 | åqEKPG                |
-O:      3 |B| äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n                        |    4 | aeåtom äetm aelpm aem |
+O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-21 of 21 | YEAR | AUTHOR                                             |
+O:      3 |B| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| Freedom: Memoirs 1954 - 2021                                                          | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:     19 |A| dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg                   |    1 | <sdlkg lkdjg                                       |
+O:     20 |U| ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg                                       |   30 | åqEKPG                                             |
+O:     21 |B| äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n                                          |    4 | aeåtom äetm aelpm aem                              |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:2
 O: Book library id: 2
-O:     Book status: UKNOWN
-O:      Book title: ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg
-O:Publication year: 30
-O:          Author: åqEKPG
+O:     Book status: Available
+O:      Book title: Freedom: Memoirs 1954 - 2021
+O:Publication year: 2024
+O:          Author: Angela Merkel
 O:
 O:
 O:           (B)orrow | (R)eturn | re(M)ove | (E)dit 
@@ -152,47 +173,66 @@ O:
 O: I am listening to your command: 
 I:e
 O:
-O:What is the name of the book [ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg]: 
+O:What is the name of the book [Freedom: Memoirs 1954 - 2021]: 
 I:jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN
 O:
-O:What is the name of the author [åqEKPG]: 
+O:What is the name of the author [Angela Merkel]: 
 I:
 O:
 O:Valid publication year is between 1 and 2025.
 O:
-O:What is the publication year [30]: 
+O:What is the publication year [2024]: 
 I:
 O:
 O:What is status of the book? 
 O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
-O: Status [UKNOWN] :
+O: 4 = Removed
+O: Status [Available] :
 I:
 O:
 O:                 Book title: jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN
-O: Book status in the library: UKNOWN
-O:      Book publication year: 30
-O:                Book author: åqEKPG
+O: Book status in the library: Available
+O:      Book publication year: 2024
+O:                Book author: Angela Merkel
 O:
 O:  (R)e-enter | (A)ccept |  (C)ancel 
 O:
 O:  I am listening to your command [R]: 
 I:a
 O: Book library id: 2
-O:     Book status: UKNOWN
+O:     Book status: Available
 O:      Book title: jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN
-O:Publication year: 30
-O:          Author: åqEKPG
+O:Publication year: 2024
+O:          Author: Angela Merkel
 O:
 O:
 O: Your keyboard is my master!
-O:BOOK ID |S| TITLE                                          (U)p (D)own 1-3 of 3 | YEAR | AUTHOR                |
-O:      1 |A| dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg |    1 | <sdlkg lkdjg          |
-O:      2 |U| jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN            |   30 | åqEKPG                |
-O:      3 |B| äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n                        |    4 | aeåtom äetm aelpm aem |
+O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-21 of 21 | YEAR | AUTHOR                                             |
+O:      3 |B| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
+O:     16 |A| Der große Schlaf                                                                      | 2021 | Raymond Chandler                                   |
+O:      9 |A| Desert Star                                                                           | 2022 | Michael Connelly                                   |
+O:     15 |A| Die Lady im See                                                                       | 2022 | Raymond Chandler (Autor), Robin Detje (Übersetzer) |
+O:      2 |A| jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN                              | 2024 | Angela Merkel                                      |
+O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
+O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
+O:      8 |A| Roadside Picnic                                                                       | 1972 | Robert Forster                                     |
+O:     12 |A| Second Foundation                                                                     | 2019 | Isaac Asimov                                       |
+O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
+O:     11 |A| The End of Eternity                                                                   | 1955 | Isaac Asimov                                       |
+O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
+O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
+O:      5 |A| The Mercy of Gods                                                                     | 2024 | James S.A. Corey                                   |
+O:      4 |A| The Sirens Of Titan                                                                   | 1999 | Kurt Vonnegut                                      |
+O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
+O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
+O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
+O:     19 |A| dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg                   |    1 | <sdlkg lkdjg                                       |
+O:     20 |U| ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg                                       |   30 | åqEKPG                                             |
+O:     21 |B| äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n                                          |    4 | aeåtom äetm aelpm aem                              |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:
 O:
@@ -204,5 +244,7 @@ O:3. Search Books
 O:4. Borrow/Return Book
 O:5. Remove book from the library
 O:
+O:I am listening to your command: 
+I:0
 O:I am listening to your command: 
 I:0
