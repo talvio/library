@@ -14,9 +14,9 @@ BOOK: 3
 Title:  Cat's Cradle
 Author: Kurt Vonnegut
 Year:   2010
-Status: Available
 BOOK_END
 BOOK: 4
+Title:  The Sirens Of Titan
 Author: Kurt Vonnegut
 Year:   1999
 Status: Available

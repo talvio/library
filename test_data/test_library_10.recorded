@@ -29,7 +29,7 @@ O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilog
 O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:a
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
@@ -52,7 +52,7 @@ O:      6 |A| The Long Mars                                                     
 O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:f
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
@@ -88,7 +88,7 @@ O:     13 |A| The Martian                                                       
 O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
 O:            -> FILTER: the                                                                        | 
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:
 O:
@@ -122,7 +122,7 @@ O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilog
 O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:i
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
@@ -145,7 +145,7 @@ O:     16 |A| Der große Schlaf                                                 
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:a
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
@@ -168,7 +168,7 @@ O:      6 |A| The Long Mars                                                     
 O:     14 |U| Leadership and Self-Deception: Getting Out of the Box                                 | 2010 | The Arbinger Institute                             |
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:t
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
@@ -191,7 +191,7 @@ O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilog
 O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:1
 O: Book library id: 1
@@ -234,7 +234,7 @@ O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilog
 O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:r
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
@@ -257,7 +257,7 @@ O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilog
 O:     10 |A| Two Kinds of Truth                                                                    | 2017 | Michael Connelly                                   |
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
-O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
 O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
 I:q
 O:
@@ -271,19 +271,6 @@ O:5. Remove book from the library
 O:
 O:I am listening to your command: 
 I:q
-O:
-O:=== Library Manager ===
-O:0. Save and Exit
-O:1. Add Book
-O:2. List All Books
-O:3. Search Books
-O:4. Borrow/Return Book
-O:5. Remove book from the library
-O:
-O:I am listening to your command: 
-I:0
-O:I am listening to your command: 
-I:0
 O:
 O:=== Library Manager ===
 O:0. Save and Exit

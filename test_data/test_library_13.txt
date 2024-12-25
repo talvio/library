@@ -1,0 +1,18 @@
+BOOK: 1
+Title:  dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg
+Author: <sdlkg lkdjg
+Year:   1
+Status: Available
+BOOK_END
+BOOK: 2
+Title:  jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN
+Author: åqEKPG
+Year:   30
+Status: UKNOWN
+BOOK_END
+BOOK: 3
+Title:  äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n
+Author: aeåtom äetm aelpm aem
+Year:   4
+Status: Borrowed
+BOOK_END

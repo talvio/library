@@ -1,10 +1,7 @@
 from typing import Final
 import os
-
 import re
 
-#print(os.environ)
-#exit()
 if "PYTEST_VERSION" in os.environ:
     MESSAGE_FLASH_TIME: Final = 0
 else:
@@ -29,11 +26,16 @@ NO:                     Final = ("N","n","No","no")
 AUTHOR:                 Final = ("A","a","Author","author")
 TITLE:                  Final = ("T","t","Title","title")
 ID:                     Final = ("I","i","Id","id")
+YEAR:                   Final = ("Y","y","Year","year")
 FILTER:                 Final = ("F","f","Filter","filter")
 UP:                     Final = ("U","u")
 DOWN:                   Final = ("D","d")
 EDIT:                   Final = ("E","e","Edit", "edit")
 LIST:                   Final = (2, "L", "l", "List", "list")
+TITLE_SORT:             Final = "Title"
+AUTHOR_SORT:            Final = "Author"
+BOOK_ID_SORT:           Final = "Book_id"
+YEAR_SORT:              Final = "Year"
 
 VALID_BOOK_LIST_COMMAND = ACCEPT + REENTER + CANCEL + YES + AUTHOR + TITLE + ID + QUIT + FILTER + UP + DOWN
 

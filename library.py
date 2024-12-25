@@ -153,6 +153,11 @@ def book_details_control(library, user_interface, book_id):
             if new_title != None:
                 book.isbn, book.title, book.author, book.publication_year, book.status = new_isbn, new_title, new_author, new_publication_year, new_status
             user_interface.flash_book_details_and_message(book, "\n Your keyboard is my master!")
+    elif next_command in C.REMOVE:
+        book = user_interface.remove_book_id(book_id)
+        if book != None: 
+            book.status = C.REMOVED
+            user_interface.flash_book_details_and_message(book, "\n Your keyboard is my master!")
     return next_command
 
 """ Controls actions when displaying book list, filtered or full. 
@@ -173,11 +178,29 @@ def book_list_control(library, user_interface, command = None):
                 default_answer = "q", 
                 question = " Book ID number to Borrow/Return and view all book details. I am listening to your command: ")
         if command in C.AUTHOR:
+            if user_interface.sort_column == C.AUTHOR_SORT:
+                user_interface.reverse_sort = not user_interface.reverse_sort
+            else:
+                user_interface.reverse_sort = False
             user_interface.author_sort()
         elif command in C.TITLE:
+            if user_interface.sort_column == C.TITLE_SORT:
+                user_interface.reverse_sort = not user_interface.reverse_sort
+            else:
+                user_interface.reverse_sort = False
             user_interface.title_sort() 
         elif command in C.ID:
+            if user_interface.sort_column == C.BOOK_ID_SORT:
+                user_interface.reverse_sort = not user_interface.reverse_sort
+            else:
+                user_interface.reverse_sort = False
             user_interface.book_id_sort() 
+        elif command in C.YEAR:
+            if user_interface.sort_column == C.YEAR_SORT:
+                user_interface.reverse_sort = not user_interface.reverse_sort
+            else:
+                user_interface.reverse_sort = False
+            user_interface.publication_year_sort() 
         elif command in C.FILTER:
             user_interface.list_books()
             user_interface.get_filter() 
@@ -202,6 +225,10 @@ def main(library_file=None,io_recording_file=None,rerecord=False):
         rerecord = True
     if io_recording_file == None and command_line_arguments != []:
         io_recording_file = command_line_arguments.pop(0)
+    if command_line_arguments != []:
+        rerecord = command_line_arguments.pop(0)
+        if rerecord == "True":
+            rerecord = True
     if io_recording_file != None:
         user_interface = UserInterface(library = None, io_recording_file = io_recording_file, run_recorded = True, record_additional_io = True, rerecord_output = rerecord)
     else:
@@ -227,6 +254,7 @@ def main(library_file=None,io_recording_file=None,rerecord=False):
                 next_command = C.QUIT
         next_command = user_interface.main_menu_command()
     library.save_library()
+    return None
 
 if __name__ == "__main__":
     main()

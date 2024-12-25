@@ -1,0 +1,208 @@
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:1
+O:
+O:What is the name of the book: 
+I:dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg 
+O:
+O:What is the name of the author: 
+I:<sdlkg lkdjg  
+O:
+O:Valid publication year is between 1 and 2025.
+O:
+O:What is the publication year: 
+I:1
+O:
+O:What is status of the book? 
+O: 1 = Available
+O: 2 = Borrowed
+O: 3 = Unknown
+O: Status: 
+I:1
+O:
+O:                 Book title: dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg 
+O: Book status in the library: Available
+O:      Book publication year: 1
+O:                Book author: <sdlkg lkdjg  
+O:
+O:  (R)e-enter | (A)ccept |  (C)ancel 
+O:
+O:  I am listening to your command [R]: 
+I:a
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:1
+O:
+O:What is the name of the book: 
+I:ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg
+O:
+O:What is the name of the author: 
+I: åqEKPG 
+O:
+O:Valid publication year is between 1 and 2025.
+O:
+O:What is the publication year: 
+I:eå
+O:
+O:Valid publication year is between 1 and 2025.
+O:
+O:What is the publication year: 
+I:30
+O:
+O:What is status of the book? 
+O: 1 = Available
+O: 2 = Borrowed
+O: 3 = Unknown
+O: Status: 
+I:3
+O:
+O:                 Book title: ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg
+O: Book status in the library: UKNOWN
+O:      Book publication year: 30
+O:                Book author:  åqEKPG 
+O:
+O:  (R)e-enter | (A)ccept |  (C)ancel 
+O:
+O:  I am listening to your command [R]: 
+I:a
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:1
+O:
+O:What is the name of the book: 
+I:äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n
+O:
+O:What is the name of the author: 
+I:aeåtom äetm aelpm aem 
+O:
+O:Valid publication year is between 1 and 2025.
+O:
+O:What is the publication year: 
+I:4
+O:
+O:What is status of the book? 
+O: 1 = Available
+O: 2 = Borrowed
+O: 3 = Unknown
+O: Status: 
+I:2
+O:
+O:                 Book title: äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n
+O: Book status in the library: Borrowed
+O:      Book publication year: 4
+O:                Book author: aeåtom äetm aelpm aem 
+O:
+O:  (R)e-enter | (A)ccept |  (C)ancel 
+O:
+O:  I am listening to your command [R]: 
+I:a
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:2
+O:BOOK ID |S| TITLE                                          (U)p (D)own 1-3 of 3 | YEAR | AUTHOR                |
+O:      1 |A| dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg |    1 | <sdlkg lkdjg          |
+O:      2 |U| ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg                     |   30 | åqEKPG                |
+O:      3 |B| äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n                        |    4 | aeåtom äetm aelpm aem |
+O:
+O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+I:2
+O: Book library id: 2
+O:     Book status: UKNOWN
+O:      Book title: ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg
+O:Publication year: 30
+O:          Author: åqEKPG
+O:
+O:
+O:           (B)orrow | (R)eturn | re(M)ove | (E)dit 
+O: (Q)uit = main menu | ENTER or (L)ist = back to book list
+O:
+O: I am listening to your command: 
+I:e
+O:
+O:What is the name of the book [ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg]: 
+I:jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN
+O:
+O:What is the name of the author [åqEKPG]: 
+I:
+O:
+O:Valid publication year is between 1 and 2025.
+O:
+O:What is the publication year [30]: 
+I:
+O:
+O:What is status of the book? 
+O: 1 = Available
+O: 2 = Borrowed
+O: 3 = Unknown
+O: Status [UKNOWN] :
+I:
+O:
+O:                 Book title: jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN
+O: Book status in the library: UKNOWN
+O:      Book publication year: 30
+O:                Book author: åqEKPG
+O:
+O:  (R)e-enter | (A)ccept |  (C)ancel 
+O:
+O:  I am listening to your command [R]: 
+I:a
+O: Book library id: 2
+O:     Book status: UKNOWN
+O:      Book title: jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN
+O:Publication year: 30
+O:          Author: åqEKPG
+O:
+O:
+O: Your keyboard is my master!
+O:BOOK ID |S| TITLE                                          (U)p (D)own 1-3 of 3 | YEAR | AUTHOR                |
+O:      1 |A| dkfnaldkg <lskjg ö<lksdjg öl<ksdjg ölk<sjdg ölk<sd glkö<ds glök<sdg |    1 | <sdlkg lkdjg          |
+O:      2 |U| jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN            |   30 | åqEKPG                |
+O:      3 |B| äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n                        |    4 | aeåtom äetm aelpm aem |
+O:
+O: (A)uthor sort | (T)itle sort | (I)d sort | (F)ilter | ENTER or Q = main menu.
+O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+I:
+O:
+O:=== Library Manager ===
+O:0. Save and Exit
+O:1. Add Book
+O:2. List All Books
+O:3. Search Books
+O:4. Borrow/Return Book
+O:5. Remove book from the library
+O:
+O:I am listening to your command: 
+I:0
