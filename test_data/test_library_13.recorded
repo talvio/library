@@ -158,7 +158,8 @@ O:     20 |U| ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg             
 O:     21 |B| äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n                                          |    4 | aeåtom äetm aelpm aem                              |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:2
 O: Book library id: 2
 O:     Book status: Available
@@ -189,7 +190,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [Available] :
+O: Status [Available]: 
 I:
 O:
 O:                 Book title: jfkgh lajshg kjsndg klsn<g öksdfnv ölkwfnvölkJFNVÖLKSDMN
@@ -233,7 +234,8 @@ O:     20 |U| ä<kg <sjg powG ¨powr gh¨+	i3h¨rgpoG ÄLÖM<S DVPg             
 O:     21 |B| äwkrJKG Ög9URW¨POKr'<kälfö<sm häaem höamet n                                          |    4 | aeåtom äetm aelpm aem                              |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:
 O:
 O:=== Library Manager ===

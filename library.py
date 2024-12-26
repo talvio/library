@@ -173,7 +173,7 @@ def book_list_control(library, user_interface, command = None):
                 C.VALID_BOOK_LIST_COMMAND, 
                 number_is_command = True, 
                 default_answer = "q", 
-                question = " Book ID number to Borrow/Return and view all book details. I am listening to your command: ")
+                question = " I am listening to your command: ")
         if command in C.AUTHOR:
             if user_interface.sort_column == C.AUTHOR_SORT:
                 user_interface.reverse_sort = not user_interface.reverse_sort

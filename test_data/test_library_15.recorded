@@ -60,7 +60,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [Removed] :
+O: Status [Removed]: 
 I:2
 O:
 O:                 Book title: Player Piano
@@ -105,7 +105,8 @@ O:     10 |A| Two Kinds of Truth                                                
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:i
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-19 of 19 | YEAR | AUTHOR                                             |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
@@ -129,7 +130,8 @@ O:     18 |A| Slaughterhouse-Five                                               
 O:     19 |B| Player Piano                                                                          | 1999 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:y
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-19 of 19 | YEAR | AUTHOR                                             |
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
@@ -153,7 +155,8 @@ O:      5 |A| The Mercy of Gods                                                 
 O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:y
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-19 of 19 | YEAR | AUTHOR                                             |
 O:      7 |A| Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley | 2024 | Brent Underwood                                    |
@@ -177,7 +180,8 @@ O:     11 |A| The End of Eternity                                               
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:i
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-19 of 19 | YEAR | AUTHOR                                             |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
@@ -201,7 +205,8 @@ O:     18 |A| Slaughterhouse-Five                                               
 O:     19 |B| Player Piano                                                                          | 1999 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:19
 O: Book library id: 19
 O:     Book status: Borrowed
@@ -232,7 +237,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [Borrowed] :
+O: Status [Borrowed]: 
 I:4
 O:
 O:                 Book title: Player Piano
@@ -274,7 +279,8 @@ O:     18 |A| Slaughterhouse-Five                                               
 O:     19 |R| Player Piano                                                                          | 1999 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:19
 O: Book library id: 19
 O:     Book status: Removed
@@ -305,7 +311,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [Removed] :
+O: Status [Removed]: 
 I:2
 O:
 O:                 Book title: Player Piano
@@ -347,7 +353,8 @@ O:     18 |A| Slaughterhouse-Five                                               
 O:     19 |R| Player Piano                                                                          | 1999 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:19
 O: Book library id: 19
 O:     Book status: Removed
@@ -378,7 +385,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [Removed] :
+O: Status [Removed]: 
 I:2
 O:
 O:                 Book title: Player Piano
@@ -420,7 +427,8 @@ O:     18 |A| Slaughterhouse-Five                                               
 O:     19 |B| Player Piano                                                                          | 1999 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:
 O:
 O:=== Library Manager ===
@@ -495,7 +503,8 @@ O:     10 |A| Two Kinds of Truth                                                
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:i
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-19 of 19 | YEAR | AUTHOR                                             |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
@@ -519,7 +528,8 @@ O:     18 |A| Slaughterhouse-Five                                               
 O:     19 |B| Player Piano                                                                          | 1999 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:
 O:
 O:=== Library Manager ===
@@ -595,7 +605,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     20 |A| War on Peace: The Decline of American Influence                                       | 2021 | Ronan Farrow                                       |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:f
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-20 of 20 | YEAR | AUTHOR                                             |
 O:      3 |B| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
@@ -649,7 +660,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     20 |A| War on Peace: The Decline of American Influence                                       | 2021 | Ronan Farrow                                       |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:
 O:
 O:=== Library Manager ===
@@ -726,7 +738,8 @@ O:     21 |A| Very long title Very long titleVery long titleVery long titleVery 
 O:     20 |A| War on Peace: The Decline of American Influence                                                                                      | 2021 | Ronan Farrow                                 |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:
 O:
 O:=== Library Manager ===
@@ -804,7 +817,8 @@ O:     22 |A| Very short title                                                  
 O:     20 |A| War on Peace: The Decline of American Influence                              | 2021 | Ronan Farrow                                                                                         |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:i
 O:BOOK ID |S| TITLE                                                 (U)p (D)own 1-22 of 22 | YEAR | AUTHOR                                                                                               |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five  | 2020 | Douglas Adams                                                                                        |
@@ -831,7 +845,8 @@ O:     21 |A| Very long title Very long titleVery long titleVery long titleVery 
 O:     22 |A| Very short title                                                             | 2025 | Very long author name Very long author name Very long author name Very long author name Very long au |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:14
 O: Book library id: 14
 O:     Book status: UKNOWN
@@ -878,7 +893,8 @@ O:     21 |A| Very long title Very long titleVery long titleVery long titleVery 
 O:     22 |A| Very short title                                                             | 2025 | Very long author name Very long author name Very long author name Very long author name Very long au |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:22
 O: Book library id: 22
 O:     Book status: Available
@@ -933,7 +949,8 @@ O:     21 |A| Very long title Very long titleVery long titleVery long titleVery 
 O:     22 |R| Very short title                                                             | 2025 | Very long author name Very long author name Very long author name Very long author name Very long au |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:22
 O: Book library id: 22
 O:     Book status: Removed
@@ -964,7 +981,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [Removed] :
+O: Status [Removed]: 
 I:1
 O:
 O:                 Book title: Very short title
@@ -1009,7 +1026,8 @@ O:     21 |A| Very long title Very long titleVery long titleVery long titleVery 
 O:     22 |A| Very short title                                                             | 2025 | Very long author name Very long author name Very long author name Very long author name Very long au |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:
 O:
 O:=== Library Manager ===

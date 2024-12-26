@@ -96,11 +96,25 @@ def test_save_library():
     test_library2 = Library(test_library_file_temp)
     assert test_library2.all_books[0].status == C.BORROWED
 
-""" You can record new tests from command line with "./library.py library.txt test_recording.txt"
-    1. opy library.txt and test_recording.txt to test_data folder
-    2. add them to the list recorded_library_test_files below
-    3. next time you run pytest, your previous recording will be rerun. 
+""" You can record new tests from command line 
+    1. Copy library.txt to tmp_library.txt
+    2. run ./library.py tmp_library.txt test_recording.recording
+    3. Copy library.txt and test_recording.recording to test_data folder
+    4. add them to the list recorded_library_test_files below
+    5. next time you run pytest, your previous recording will be rerun. 
     You don't need to worry about returning the library file to the starting state. Go wild. 
+
+    If you change the user interface, you can rerun the recording from the command line
+    ./library.py tmp_library.txt test_data/test_recording.recording
+
+    If you want to rerecord all tests
+    1. change the line below from 
+    assert run_main(test_library_file_temp, recorded_test_file) == None
+    to
+    assert run_main(test_library_file_temp, recorded_test_file, True) == None
+    2. run pytest
+    3. change the line below back to 
+    assert run_main(test_library_file_temp, recorded_test_file) == None
 """
 recorded_library_test_files = [
     ("test_library_10.txt", "test_library_10.recorded"),

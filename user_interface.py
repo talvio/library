@@ -58,6 +58,7 @@ class UserInterface:
 
     def print_book_list_menu(self):
         self.io.my_print("\n (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.")
+        self.io.my_print(" Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.") 
  
     def get_command(self, valid_commands, number_is_command = False, default_answer = "", question = " I am listening to your command: "):
         command = self.io.my_input(question) or default_answer
@@ -103,7 +104,7 @@ class UserInterface:
             input_is_valid = False
             while not input_is_valid:
                 if status != "":
-                    status = self.io.my_input(f"\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status [{status}] :") or status
+                    status = self.io.my_input(f"\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status [{status}]: ") or status
                 else:
                     status = self.io.my_input("\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status: ")
                 if status == "1" or status == C.AVAILABLE:

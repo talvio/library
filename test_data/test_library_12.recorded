@@ -30,7 +30,8 @@ O:     10 |A| Two Kinds of Truth                                                
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:100
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:      3 |B| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
@@ -53,17 +54,18 @@ O:     10 |A| Two Kinds of Truth                                                
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:-1
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: I am listening to your command: 
 I:0
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: I am listening to your command: 
 I:0.1
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: I am listening to your command: 
 I:1.0
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: I am listening to your command: 
 I:1.2
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: I am listening to your command: 
 I:
 O:
 O:=== Library Manager ===
@@ -97,7 +99,8 @@ O:     10 |A| Two Kinds of Truth                                                
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:a
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:     13 |A| The Martian                                                                           | 2011 | Andy Weir                                          |
@@ -120,11 +123,12 @@ O:     14 |U| Leadership and Self-Deception: Getting Out of the Box             
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:w
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: I am listening to your command: 
 I:ö
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: I am listening to your command: 
 I:Title
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:      3 |B| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
@@ -147,7 +151,8 @@ O:     10 |A| Two Kinds of Truth                                                
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:Id
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
@@ -170,7 +175,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:t
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:      3 |B| Cat's Cradle                                                                          | 2010 | Kurt Vonnegut                                      |
@@ -193,7 +199,8 @@ O:     10 |A| Two Kinds of Truth                                                
 O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                                                    |  868 | Unknown                                            |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:i
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
@@ -216,7 +223,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:18
 O: Book library id: 18
 O:     Book status: Available
@@ -251,7 +259,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:19
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
@@ -274,7 +283,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:20
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
@@ -297,7 +307,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:6
 O: Book library id: 6
 O:     Book status: Available
@@ -328,7 +339,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [Available] :
+O: Status [Available]: 
 I:
 O:
 O:                 Book title: The Long Mars
@@ -369,7 +380,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:6
 O: Book library id: 6
 O:     Book status: Available
@@ -400,7 +412,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [Available] :
+O: Status [Available]: 
 I:3
 O:
 O:                 Book title: The Long Mars extra
@@ -441,7 +453,8 @@ O:     17 |B| Vajracchedikā Prajñāpāramitā Sūtra                          
 O:     18 |A| Slaughterhouse-Five                                                                   | 1991 | Kurt Vonnegut                                      |
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:f
 O:BOOK ID |S| TITLE                                                          (U)p (D)own 1-18 of 18 | YEAR | AUTHOR                                             |
 O:      1 |B| The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts     | 2020 | Douglas Adams                                      |
@@ -470,7 +483,8 @@ O:      6 |U| The Long Mars extra                                               
 O:            -> FILTER: extra                                                                      | 
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:6
 O: Book library id: 6
 O:     Book status: UKNOWN
@@ -501,7 +515,7 @@ O: 1 = Available
 O: 2 = Borrowed
 O: 3 = Unknown
 O: 4 = Removed
-O: Status [UKNOWN] :
+O: Status [UKNOWN]: 
 I:1
 O:
 O:                 Book title: The Long Mars
@@ -526,14 +540,16 @@ O:      6 |A| The Long Mars                                                     
 O:            -> FILTER: extra                                                                      | 
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:a
 O:BOOK ID |S| TITLE                                                            (U)p (D)own 1-1 of 1 | YEAR | AUTHOR                                             |
 O:      6 |A| The Long Mars                                                                         | 2014 | Terry Pratchett, Stephen Baxter                    |
 O:            -> FILTER: extra                                                                      | 
 O:
 O: (A)uthor sort | (T)itle sort | (I)d sort | (Y)ear sort | (F)ilter | ENTER or Q = main menu.
-O: Book ID number to Borrow/Return and view all book details. I am listening to your command: 
+O: Book ID number to BORROW, RETURN, REMOVE and VIEW and EDIT all book details.
+O: I am listening to your command: 
 I:
 O:
 O:=== Library Manager ===
