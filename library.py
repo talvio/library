@@ -107,7 +107,6 @@ class Library:
         Write new library file with the fresh library data.
     """
     def save_library(self):
-        return
         if os.path.isfile(self.library_file):
             shutil.copyfile(self.library_file, self.library_file + ".backup")
         f = open(self.library_file, 'w', encoding="utf-8")
@@ -117,9 +116,6 @@ class Library:
             book_record = f"BOOK: {book_index}\nTitle:  {book.title}\nAuthor: {book.author}\nYear:   {book.publication_year}\nStatus: {book.status}\nBOOK_END\n"
             f.write(book_record)
         f.close
-        #print("Checking backup! " + self.library_file + " " + self.library_file + ".backup " + str(filecmp.cmp(self.library_file, self.library_file + ".backup", shallow=True)) + "\n\n")
-        #if filecmp.cmp(self.library_file, self.library_file + ".backup"):
-        #    os.remove(self.library_file + ".backup")
 
     """ The user knows the ID of the book in the library and uses this ID in the UI to identify the book. 
         This method returns a reference to the Book with that book_id in the library.
