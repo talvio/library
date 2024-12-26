@@ -85,13 +85,16 @@ def make_corrupted_test_library(test_library_file_valid = None, test_data_dir = 
     f.close
     return corrupted_test_library_file
 
+
 def test_save_library():
     test_library_file_valid = os.path.normpath(C.TEST_DATA_DIR + TEST_LIBRARY_VALID_1)
     test_library_file_temp = os.path.normpath(C.TEST_DATA_DIR + TEMP_LIBRARY_SAVE_FILE)
     shutil.copyfile(test_library_file_valid, test_library_file_temp)
-    test_library = Library(test_library_file_temp)
-    test_library.save_library()
-
+    test_library1 = Library(test_library_file_temp)
+    test_library1.all_books[0].status = C.BORROWED
+    test_library1.save_library()
+    test_library2 = Library(test_library_file_temp)
+    assert test_library2.all_books[0].status == C.BORROWED
 
 """ You can record new tests from command line with "./library.py library.txt test_recording.txt"
     1. opy library.txt and test_recording.txt to test_data folder
@@ -114,9 +117,8 @@ def test_run_recorded_io(test_library_file, recorded_test_file):
     test_library_file_temp = os.path.normpath(C.TEST_DATA_DIR + TEMP_LIBRARY_SAVE_FILE)
     shutil.copyfile(test_library_file, test_library_file_temp)
     recorded_test_file = os.path.normpath(C.TEST_DATA_DIR + recorded_test_file)
-    #temp_test_recording_file = os.path.normpath(C.TEST_DATA_DIR + TEMP_TEST_RECORDING_FILE)
-    #shutil.copyfile(recorded_test_file, temp_test_recording_file)
     assert run_main(test_library_file_temp, recorded_test_file) == None
+
 
 
 
