@@ -15,9 +15,9 @@ my_observed_output = [""]
 my_recorded_output = [""]
 
 if C.PYTEST_RUNNING:
-    STEP_DELAY = 0
+    STEP_DELAY = 0.01
 else:
-    STEP_DELAY = 1
+    STEP_DELAY = 2
 
 
 """ InputOutputAndTest captures all print and input commands. 

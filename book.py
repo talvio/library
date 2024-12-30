@@ -10,18 +10,26 @@ class Book:
     """ Returns Isbn where self._isbn is a C.ISBN_UNDEFINED if called with C.ISBN_UNDEFINED
     Creates Isbn where self._isbn is a valid ISBN if initiator is called with a valid ISBN
     Otherwises raises an exception """
-    def __init__(self, init_isbn = C.ISBN_UNDEFINED, book_id = None, title = "", author = "", publication_year = C.YEAR_UNDEFINED, status = C.UNKNOWN):
+    def __init__(
+        self, 
+        init_isbn = C.ISBN_UNDEFINED, 
+        book_id = None, 
+        title = "", author = "", 
+        publication_year = C.YEAR_UNDEFINED, 
+        status = C.UNKNOWN, 
+        pages = None, description = None
+    ):
         self.book_id:           str = book_id
         self.title:             str = title.strip()
         self.author:            str = author.strip()
         self.publication_year:  int = publication_year 
         self.status:            str = status
-        self.number_of_pages        = None                  # from a free API
-        self.publisher              = None                  # from a free API
+        self.pages:             int = pages
+        self.description:       str = description
         if init_isbn == C.ISBN_UNDEFINED:
             self._isbn = C.ISBN_UNDEFINED
         elif self.validate_isbn(init_isbn) == False:
-            raise ValueError("Invalid ISBN.")
+            raise ValueError(f"Invalid ISBN: {init_isbn}.")
         else:
             self.isbn = init_isbn
 
@@ -104,7 +112,7 @@ class Book:
         #elif len(standard_isbn) > 10:
         #    standard_isbn = standard_isbn[:-10] + "-" + standard_isbn[-10:-1] + "-" + standard_isbn[-1]
         #    #print(standard_isbn[:-10] + "-" + standard_isbn[-10:-1] + "-" + standard_isbn[-1])
-        standard_isbn = f"ISBN {standard_isbn}"
+        standard_isbn = f"{standard_isbn}"
         return standard_isbn
 
     @property
@@ -118,9 +126,12 @@ class Book:
         if new_isbn == C.ISBN_UNDEFINED and self._isbn == C.ISBN_UNDEFINED:
             return self._isbn
         if self.validate_isbn(self._isbn) == True:
-            raise RuntimeError("ISBN is already set.")
+            if self._isbn == new_isbn:
+                return self._isbn
+            else:
+                raise RuntimeError("ISBN is already set.")
         if self.validate_isbn(new_isbn) == False:
-            raise ValueError("Invalid ISBN.")
+            raise ValueError(f"Invalid ISBN: {new_isbn}.")
         if self._isbn != C.ISBN_UNDEFINED and self._isbn != C.ISBN_INVALID:
             raise RuntimeError("Previous ISBN not undefined nor invalid.")
         self._isbn = self.standard_isbn_format(new_isbn)

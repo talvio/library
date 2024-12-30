@@ -52,8 +52,8 @@ BORROWED:               Final = "Borrowed"
 REMOVED:                Final = "Removed"
 VALID_STATUSES:         Final = [UNKNOWN, AVAILABLE, BORROWED, REMOVED]
 VALID_LIBRARY_TAGS:     Final = ["BOOK:","Title:", "Author:","Year:","Status:","BOOK_END"]
-YEAR_UNDEFINED:         Final = -99999
-ISBN_UNDEFINED:         Final = ""
+YEAR_UNDEFINED:         Final = None
+ISBN_UNDEFINED:         Final = None
 ISBN_INVALID:           Final = -1
 
 ## Library file
@@ -64,4 +64,12 @@ TEST_DATA_DIR:          Final = LIBRARY_DIR + "test_data/"
 ## ISBN Regular expression
 REGEXP_VALID_ISBN10 = re.compile(r"^(?:ISBN(?:-10)?:?\ )?(?=[-0-9X\ ]{13}$|[0-9X]{10}$)[0-9]{1,5}[-\ ]?(?:[0-9]+[-\ ]?){2}[0-9X]$")
 REGEXP_VALID_ISBN13 = re.compile(r"^(?:ISBN(?:-13)?:?\ )?(?=[-0-9\ ]{17}$|[0-9]{13}$)97[89][-\ ]?[0-9]{1,5}[-\ ]?(?:[0-9]+[-\ ]?){2}[0-9]$")
+
+## BOOKS API
+GOOGLE_API_KEY:         Final = "AIzaSyBlJhQP-k-qaFyrhsE55NlVuv_XkUo2CQs"
+GOOGLE_API:             Final = "https://www.googleapis.com/books/v1/volumes?q="
+API_TIMEOUT:            Final = 2
+API_MAXRESULTS:         Final = 5
+
+
 

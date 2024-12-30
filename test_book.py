@@ -72,7 +72,9 @@ def test_isbn_setter(test_book, isbn_to_test, is_valid):
     if is_valid:
         test_book.isbn = isbn_to_test
         assert test_book.isbn == test_book.standard_isbn_format(isbn_to_test)
-        with pytest.raises(RuntimeError, match="ISBN is already set"):test_book.isbn = test_book.standard_isbn_format(isbn_to_test)
+        test_book.isbn = test_book.standard_isbn_format(isbn_to_test)
+        assert test_book.isbn == test_book.standard_isbn_format(isbn_to_test)
+        with pytest.raises(RuntimeError, match="ISBN is already set"):test_book.isbn = test_book.standard_isbn_format("9780671434007")
         #test_isbn.isbn = 123
         #with pytest.raises(RuntimeError, match="Previous ISBN not undefined nor invalid."):test_isbn.isbn = isbn_to_test
     else:

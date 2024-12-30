@@ -7,6 +7,7 @@ import library_constants as C
 import time
 from book import Book
 from my_io import InputOutputAndTest
+from book_api import google_books_api
 
 ROWS_RESERVED_FOR_BOILERPLATE   = 6
 RESERVED_FOR_COLUMN_GAPS        = 24
@@ -70,67 +71,101 @@ class UserInterface:
         self.io.my_print("\n           (B)orrow | (R)eturn | re(M)ove | (E)dit ")
         self.io.my_print(" (Q)uit = main menu | ENTER or (L)ist = back to book list\n")
 
-    def ask_book_information(self, title = "", author = "", publication_year = C.YEAR_UNDEFINED, status = ""):
+    def ask_title(self, title):
+        input_is_valid = False
+        while not input_is_valid:
+            if title != "":
+                title = self.io.my_input(f"\nWhat is the name of the book [{title}]: ") or title
+            else:
+                title = self.io.my_input(f"\nWhat is the name of the book: ") 
+            if title != "": input_is_valid = True
+        return title
+
+    def ask_author(self, author):
+        input_is_valid = False
+        while not input_is_valid:
+            if author != "":
+                author = self.io.my_input(f"\nWhat is the name of the author [{author}]: ") or author
+            else:
+                author = self.io.my_input(f"\nWhat is the name of the author: ")
+            if author != "": input_is_valid = True
+        return author
+
+    def get_publication_year(self, publication_year):
+        max_publication_year = datetime.now().year + 1
+        input_is_valid = False
+        while not input_is_valid:
+            if publication_year != None and publication_year > 0 and publication_year <= max_publication_year: 
+                input_is_valid = True
+            else:
+                self.io.my_print(f"\nValid publication year is between 1 and {max_publication_year}.")
+            if publication_year != None and publication_year > 0:
+                publication_year = self.io.my_input(f"\nWhat is the publication year [{publication_year}]: ") or publication_year
+            else:
+                publication_year = self.io.my_input(f"\nWhat is the publication year: ") 
+            try:
+                publication_year = int(publication_year)
+            except:
+                publication_year = None
+        return publication_year
+
+    def get_status(self, status):
+        input_is_valid = False
+        while not input_is_valid:
+            if status != "":
+                status = self.io.my_input(f"\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status [{status}]: ") or status
+            else:
+                status = self.io.my_input("\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status: ")
+            if status == "1" or status == C.AVAILABLE:
+                status = C.AVAILABLE
+            elif status == "2" or status == C.BORROWED:
+                status = C.BORROWED
+            elif status == "3" or status == C.UNKNOWN:
+                status = C.UNKNOWN
+            elif status == "4" or status == C.REMOVED:
+                status = C.REMOVED
+            else:
+                status = ""
+            if status in C.VALID_STATUSES:
+                input_is_valid = True
+        return status
+
+    def ask_book_information(self, book_isbn = C.ISBN_UNDEFINED, title = "", author = "", publication_year = C.YEAR_UNDEFINED, status = "", pages = None, description = None):
         book_data_valid = False
         while not book_data_valid:
             os.system('clear')
-            input_is_valid = False
-            while not input_is_valid:
-                if title != "":
-                    title = self.io.my_input(f"\nWhat is the name of the book [{title}]: ") or title
-                else:
-                    title = self.io.my_input(f"\nWhat is the name of the book: ") 
-                if title != "": input_is_valid = True
-            input_is_valid = False
-            while not input_is_valid:
-                if author != "":
-                    author = self.io.my_input(f"\nWhat is the name of the author [{author}]: ") or author
-                else:
-                    author = self.io.my_input(f"\nWhat is the name of the author: ")
-                if author != "": input_is_valid = True
-            max_publication_year = datetime.now().year + 1
-            input_is_valid = False
-            while not input_is_valid:
-                self.io.my_print(f"\nValid publication year is between 1 and {max_publication_year}.\n")
-                if publication_year > 0:
-                    publication_year = self.io.my_input(f"What is the publication year [{publication_year}]: ") or publication_year
-                else:
-                    publication_year = self.io.my_input(f"What is the publication year: ") 
-                try:
-                    publication_year = int(publication_year)
-                except:
-                    publication_year = 0
-                if publication_year > 0 and publication_year <= max_publication_year: input_is_valid = True
-            input_is_valid = False
-            while not input_is_valid:
-                if status != "":
-                    status = self.io.my_input(f"\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status [{status}]: ") or status
-                else:
-                    status = self.io.my_input("\nWhat is status of the book? \n 1 = Available\n 2 = Borrowed\n 3 = Unknown\n 4 = Removed\n Status: ")
-                if status == "1" or status == C.AVAILABLE:
-                    status = C.AVAILABLE
-                elif status == "2" or status == C.BORROWED:
-                    status = C.BORROWED
-                elif status == "3" or status == C.UNKNOWN:
-                    status = C.UNKNOWN
-                elif status == "4" or status == C.REMOVED:
-                    status = C.REMOVED
-                else:
-                    status = ""
-                if status in C.VALID_STATUSES:
-                    input_is_valid = True
+            title = self.ask_title(title)
+            author = self.ask_author(author)
+            google_books = google_books_api(title, author)
+            if google_books != [] and google_books[0] != None:
+                book_isbn, title, author, publication_year, status, pages, description = self.select_book(
+                    google_books, 
+                    book_isbn, 
+                    title, 
+                    author,
+                    publication_year, 
+                    status, 
+                    pages, 
+                    description
+                )
+            publication_year = self.get_publication_year(publication_year)
+            status = self.get_status(status)
+
             os.system('clear')
             self.io.my_print(f"\n                 Book title: {title}")
             self.io.my_print(f" Book status in the library: {status}")
             self.io.my_print(f"      Book publication year: {publication_year}")
-            self.io.my_print(f"                Book author: {author}\n")
+            self.io.my_print(f"                Book author: {author}")
+            self.io.my_print(f"                      Pages: {pages}")
+            self.io.my_print(f"                       ISBN: {book_isbn}\n")
+            self.io.my_print(f"                Description: {description}\n")
             user_accepts_data = self.io.my_input("  (R)e-enter | (A)ccept |  (C)ancel \n\n  I am listening to your command [R]: ") or C.REENTER[0]
             if user_accepts_data in C.ACCEPT: 
                 book_data_valid = True
             if user_accepts_data in C.CANCEL: 
                 book_data_valid = True
                 title, author, publication_year, status = None, None, None, None 
-        return C.ISBN_UNDEFINED, title, author, publication_year, status
+        return book_isbn, title, author, publication_year, status, pages, description
     
     """ Asks the user how to filter the book list. 
         If the user gives an empty filter string, the book list is shown in full sorted according to the title. 
@@ -284,7 +319,7 @@ class UserInterface:
     """
     def show_book_details(self, book_id):
         if type(book_id) == str or type(book_id) == int:
-            book = self.book_id_to_book(book_id)
+            book = self.library.book_id_to_book(book_id)
         elif isinstance(book_id, Book):
             book = book_id
         else:
@@ -297,17 +332,11 @@ class UserInterface:
         book_record += f"      Book title: {book.title}\n"
         book_record += f"Publication year: {book.publication_year}\n"
         book_record += f"          Author: {book.author}\n"
+        book_record += f"           Pages: {book.pages}\n"
+        book_record += f"            ISBN: {book.isbn}\n\n"
+        book_record += f"     Description: {book.description}\n\n"
         self.io.my_print(book_record)
         return book
-
-    """ The user knows the ID of the book in the library and uses this ID in the UI to identify the book. 
-        This method returns a reference to the Book with that book_id in the library.
-    """
-    def book_id_to_book(self, book_id):
-        book_index = int(book_id) - 1
-        if book_index < 0 or book_index >= len(self.library.all_books):
-            return None
-        return self.library.all_books[book_index]
 
     """ Display details of the given book_id. 
         Check if it is available and if it is, allow it to be marked as borrowed. 
@@ -384,7 +413,7 @@ class UserInterface:
     def approve_creating_library_file(self, library_file):
         os.system('clear')
         self.io.my_print(f"Hi!\n\nLibrary file {library_file} does not exist yet.\n\n")
-        user_accepts_library_file = self.io.my_input("Press ENTER to exit. y + enter to create an empty library file: ") or "n"
+        user_accepts_library_file = self.io.my_input("Press ENTER to exit. y + enter to create an empty library file: ", C.NO[0]) 
         os.system('clear')
         if user_accepts_library_file in C.YES:
             return True
@@ -392,3 +421,50 @@ class UserInterface:
             self.io.my_print("To change the location of the library file, edit library_constants.py")
             self.io.my_input("Press ENTER to exit. ") or "continue"
 
+
+    def search_google_books(self):
+        self.io.my_print("\n Would you like to search for the book and more details about it in Google's book database?")
+        do_search = "No answer"
+        while not do_search in C.YES + C.NO + C.CANCEL:
+            do_search = self.io.my_input(" (Y)es or (No) [No]: ", C.NO)
+        if do_search in C.YES:
+            return True
+        return False
+
+
+    """ Each item in book_list is a lists containing details of a book in this order from [0] to [10]:
+        title, subtitle, author, publishing_year, page_count, print_type, categories, language, isbn10, isbn13, description 
+        The default values are returned if the user cancels and does not choose any of the books in book_list
+        The default values are also used as the first book in the list unless the default values are None. 
+    """
+    def select_book(
+        self, 
+        book_list = None, 
+        default_isbn = None, 
+        default_title = None, 
+        default_author = None, 
+        default_publication_year = None, 
+        default_status = None, 
+        default_pages = None, 
+        default_description = None
+    ):
+        row_number = 0
+        if default_title != None:
+            row_number += 1
+            self.io.my_print("\nWhat you have previously entered as the book information.\n")
+            self.io.my_print(f"   {row_number} {default_author} ({default_publication_year}): {default_title}, {default_pages} pages")
+        self.io.my_print("\nFollowing books in Google books database match your title and author.")
+        self.io.my_print("Which one do you wish to list in the library.\n")
+        for book in book_list:
+            row_number += 1
+            book_isbn = book[8]
+            if book[9] is not None: book_isbn = book[9]
+            self.io.my_print(f"   {row_number} {book[2]} ({book[3]}) {book_isbn}: {book[0]}, {book[4]} pages")
+            
+        book_selection = self.get_command(C.CANCEL, number_is_command = True, default_answer = "1", question = "\nGive a number or (C)ancel: ")
+        if book_selection in C.CANCEL or book_selection == "1":
+            return default_isbn, default_title, default_author, default_publication_year, default_status, default_pages, default_description
+        else:
+            book_selection = int(book_selection) - 2
+            book = book_list[book_selection]
+            return book[9], book[0], book[2], book[3], default_status, book[4], book[10]

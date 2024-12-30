@@ -1,144 +1,162 @@
 BOOK: 1
-Title:  The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts
+Title: The Ultimate Hitchhiker's Guide to the Galaxy: The Complete Trilogy in Five Parts
 Author: Douglas Adams
 Year:   2020
 Status: Borrowed
 BOOK_END
 BOOK: 2
-Title:  Freedom: Memoirs 1954 - 2021
+Title: Freedom: Memoirs 1954 - 2021
 Author: Angela Merkel
 Year:   2024
 Status: Available
 BOOK_END
 BOOK: 3
-Title:  Cat's Cradle
+Title: Cat's Cradle
 Author: Kurt Vonnegut
-Year:   2010
-Status: Borrowed
+Year:   2009
+Status: Available
+ISBN: 9780307567277
+Pages: 306
+Description: “A free-wheeling vehicle . . . an unforgettable ride!”—The New York Times Cat’s Cradle is Kurt Vonnegut’s satirical commentary on modern man and his madness. An apocalyptic tale of this planet’s ultimate fate, it features a midget as the protagonist, a complete, original theology created by a calypso singer, and a vision of the future that is at once blackly fatalistic and hilariously funny. A book that left an indelible mark on an entire generation of readers, Cat’s Cradle is one of the twentieth century’s most important works—and Vonnegut at his very best. “[Vonnegut is] an unimitative and inimitable social satirist.”—Harper’s Magazine “Our finest black-humorist . . . We laugh in self-defense.”—Atlantic Monthly
 BOOK_END
 BOOK: 4
-Title:  The Sirens Of Titan
+Title: The Sirens Of Titan
 Author: Kurt Vonnegut
 Year:   1999
 Status: Available
 BOOK_END
 BOOK: 5
-Title:  The Mercy of Gods
+Title: The Mercy of Gods
 Author: James S.A. Corey
 Year:   2024
 Status: Available
 BOOK_END
 BOOK: 6
-Title:  The Long Mars
+Title: The Long Mars
 Author: Terry Pratchett, Stephen Baxter
 Year:   2014
 Status: Available
 BOOK_END
 BOOK: 7
-Title:  Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley
+Title: Ghost Town Living - Mining for Purpose and Chasing Dreams at the Edge of Death Valley
 Author: Brent Underwood
 Year:   2024
 Status: Available
 BOOK_END
 BOOK: 8
-Title:  Roadside Picnic
+Title: Roadside Picnic
 Author: Robert Forster
 Year:   1972
 Status: Available
 BOOK_END
 BOOK: 9
-Title:  Desert Star
+Title: Desert Star
 Author: Michael Connelly
 Year:   2022
 Status: Available
+ISBN: 9781409186250
+Pages: 322
+Description: THE WORLDWIDE #1 BESTSELLER BEHIND AMAZON PRIME'S BOSCH AND NETFLIX'S THE LINCOLN LAWYER SOME CRIMES YOU CAN'T FORGET. Detective Renée Ballard is given the chance of a lifetime: revive the LAPD's cold case unit and find justice for the families of the forgotten. The only catch is they must first crack the unsolved murder of the sister of the city councilman who is sponsoring the department - or lose everything... OTHERS YOU CAN'T FORGIVE. Harry Bosch is top of the list of investigators Ballard wants to recruit. The former homicide detective is a living legend - but for how long? Because Bosch has his own agenda: a crime that has haunted him for years - the murder of a whole family, buried out in the desert - which he vowed to close. WHAT WOULD YOU DO IF YOU KNEW WHO DID IT? With the killer still out there and evidence elusive - Bosch is on a collision course with a choice he hoped never to make... * * * * * CRIME DOESN'T COME BETTER THAN CONNELLY: 'The pre-eminent detective novelist of his generation' IAN RANKIN 'The best mystery writer in the world' GQ 'One of the greatest crime writers' DAILY MAIL 'A superb natural storyteller' LEE CHILD 'A master' STEPHEN KING 'A genius' INDEPENDENT ON SUNDAY 'Crime thriller writing of the highest order' GUARDIAN 'A terrific writer with pace, style and humanity to spare' THE TIMES 'America's greatest living crime writer' DAILY EXPRESS 'One of the great storytellers of crime fiction' SUNDAY TELEGRAPH
 BOOK_END
 BOOK: 10
-Title:  Two Kinds of Truth
+Title: Two Kinds of Truth
 Author: Michael Connelly
 Year:   2017
 Status: Available
 BOOK_END
 BOOK: 11
-Title:  The End of Eternity
+Title: The End of Eternity
 Author: Isaac Asimov
 Year:   1955
 Status: Available
 BOOK_END
 BOOK: 12
-Title:  Second Foundation
+Title: Second Foundation
 Author: Isaac Asimov
 Year:   2019
 Status: Available
 BOOK_END
 BOOK: 13
-Title:  The Martian
+Title: The Martian
 Author: Andy Weir
 Year:   2011
 Status: Available
 BOOK_END
 BOOK: 14
-Title:  Leadership and Self-Deception: Getting Out of the Box
+Title: Leadership and Self-Deception: Getting Out of the Box
 Author: The Arbinger Institute
 Year:   2010
 Status: UKNOWN
 BOOK_END
 BOOK: 15
-Title:  Die Lady im See
-Author: Raymond Chandler (Autor), Robin Detje (Übersetzer)
+Title: Die Lady im See
+Author: Raymond Chandler
 Year:   2022
 Status: Available
 BOOK_END
 BOOK: 16
-Title:  Der große Schlaf
+Title: Der große Schlaf
 Author: Raymond Chandler
 Year:   2021
 Status: Available
 BOOK_END
 BOOK: 17
-Title:  Vajracchedikā Prajñāpāramitā Sūtra
+Title: Vajracchedikā Prajñāpāramitā Sūtra
 Author: Unknown
 Year:   868
 Status: Borrowed
 BOOK_END
 BOOK: 18
-Title:  Slaughterhouse-Five
+Title: Slaughterhouse-Five
 Author: Kurt Vonnegut
 Year:   1991
 Status: Available
 BOOK_END
 BOOK: 19
-Title:  Player Piano
+Title: Player Piano
 Author: Kurt Vonnegut
 Year:   1999
 Status: Borrowed
 BOOK_END
 BOOK: 20
-Title:  War on Peace: The Decline of American Influence
+Title: War on Peace: The Decline of American Influence
 Author: Ronan Farrow
 Year:   2021
 Status: Available
 BOOK_END
 BOOK: 21
-Title:  Very long title Very long titleVery long titleVery long titleVery long titleVery long titleVery long titleVery long titleVery long titleVery long title
+Title: Very long title Very long titleVery long titleVery long titleVery long titleVery long titleVery long titleVery long titleVery long titleVery long title
 Author: Shorty Author
 Year:   2025
 Status: Available
 BOOK_END
 BOOK: 22
-Title:  Very short title
+Title: Very short title
 Author: Very long author name Very long author name Very long author name Very long author name Very long author name Very long author name Very long author name Very long author name Very long author name
 Year:   2025
 Status: Available
 BOOK_END
 BOOK: 23
-Title:  In too Deep
+Title: In too Deep
 Author: Lee Child, Andrew Child
 Year:   2024
 Status: Available
 BOOK_END
 BOOK: 24
-Title:  The Python Years
+Title: The Python Years
 Author: Michael Palin
 Year:   2022
+Status: Available
+BOOK_END
+BOOK: 25
+Title: The Lathe of Heaven
+Author: Ursula K. Le Guin
+Year:   2020
+Status: Available
+BOOK_END
+BOOK: 26
+Title: The City and the Stars
+Author: Arthur C. Clarke
+Year:   2013
 Status: Available
 BOOK_END

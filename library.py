@@ -34,8 +34,7 @@ class Library:
     def load_library(self, library_file):
         book_index = 0
         field_name = None
-        isbn = C.ISBN_UNDEFINED
-        title, author, publication_year, status, line, book_id = None, None, None, None, None, None
+        isbn, title, author, publication_year, status, line, book_id, pages, description = C.ISBN_UNDEFINED, None, None, None, None, None, None, None, None
         line_number = 0
         with open(self.library_file, 'r') as f:
             while line != "":
@@ -61,7 +60,7 @@ class Library:
                         case "Title:":
                             if title != None: 
                                 raise RuntimeError(f"Library file is corrupted for the book number {book_index} and line {line_number}. Found two title lines.")
-                            title = line.removeprefix("Title:  ")
+                            title = line.removeprefix("Title: ")
                         case "Author:":
                             if author != None: 
                                 raise RuntimeError(f"Library file is corrupted for the book number {book_index} and line {line_number}. Found two author lines.")
@@ -75,12 +74,25 @@ class Library:
                             if status != None: 
                                 raise RuntimeError(f"Library file is corrupted for the book number {book_index} and line {line_number}. Found two statuses.")
                             status = line.removeprefix("Status: ")
+                        case "ISBN:":
+                            if isbn != None: 
+                                raise RuntimeError(f"Library file is corrupted for the book number {book_index} and line {line_number}. Found two ISBNs.")
+                            isbn = line.removeprefix("ISBN: ")
+                        case "Pages:":
+                            if pages != None: 
+                                raise RuntimeError(f"Library file is corrupted for the book number {book_index} and line {line_number}. Found two page counts.")
+                            pages = line.removeprefix("Pages: ")
+                        case "Description:":
+                            if description == None: 
+                                description = line.removeprefix("Description: ")
+                            else:
+                                description += "\n" + line.removeprefix("Description: ")
                         case "BOOK_END":
                             if title == None or author == None or publication_year == None or status == None:
                                 raise RuntimeError(f"Library file is corrupted for the book number {book_index} and line {line_number}. Mandatory book information is missing.")
-                            book = Book(isbn, book_id, title, author, publication_year, status)
+                            book = Book(isbn, book_id, title, author, publication_year, status, pages, description)
                             self.all_books.append(book)
-                            title, author, publication_year, status, book_id = None, None, None, None, None
+                            isbn, title, author, publication_year, status, line, book_id, pages, description = C.ISBN_UNDEFINED, None, None, None, None, None, None, None, None
                         case _:
                             raise RuntimeError(f"Library file is corrupted for the book number {book_index} and line {line_number}. Line begin tag is missing.")
                 elif line != "":
@@ -109,12 +121,17 @@ class Library:
     def save_library(self):
         if os.path.isfile(self.library_file):
             shutil.copyfile(self.library_file, self.library_file + ".backup")
-        f = open(self.library_file, 'w', encoding="utf-8")
-        book_index = 0
-        for book in self.all_books:
-            book_index += 1
-            book_record = f"BOOK: {book_index}\nTitle:  {book.title}\nAuthor: {book.author}\nYear:   {book.publication_year}\nStatus: {book.status}\nBOOK_END\n"
-            f.write(book_record)
+        with open(self.library_file, 'w', encoding="utf-8") as f:
+            book_index = 0
+            for book in self.all_books:
+                book_index += 1
+                book_record = f"BOOK: {book_index}\n"
+                book_record += f"Title: {book.title}\nAuthor: {book.author}\nYear:   {book.publication_year}\nStatus: {book.status}\n"
+                if book.isbn != C.ISBN_UNDEFINED: book_record += f"ISBN: {book.isbn}\n"
+                if book.pages != None: book_record += f"Pages: {book.pages}\n"
+                if book.description != None: book_record += f"Description: {book.description}\n"
+                book_record += f"BOOK_END\n"
+                f.write(book_record)
         f.close
 
     """ The user knows the ID of the book in the library and uses this ID in the UI to identify the book. 
@@ -146,9 +163,25 @@ def book_details_control(library, user_interface, book_id):
     elif next_command in C.EDIT:
         book = library.book_id_to_book(book_id)
         if book != None:
-            new_isbn, new_title, new_author, new_publication_year, new_status = user_interface.ask_book_information(book.title, book.author, book.publication_year, book.status)
+            (
+                new_isbn, 
+                new_title, 
+                new_author, 
+                new_publication_year, 
+                new_status, 
+                new_pages, 
+                new_description
+            ) = user_interface.ask_book_information(
+                book.isbn,
+                book.title, 
+                book.author, 
+                book.publication_year, 
+                book.status, 
+                book.pages, 
+                book.description
+            )
             if new_title != None:
-                book.isbn, book.title, book.author, book.publication_year, book.status = new_isbn, new_title, new_author, new_publication_year, new_status
+                book.isbn, book.title, book.author, book.publication_year, book.status, book.pages, book.description = new_isbn, new_title, new_author, new_publication_year, new_status, new_pages, new_description
             user_interface.flash_book_details_and_message(book, "\n Your keyboard is my master!")
     elif next_command in C.REMOVE:
         book = user_interface.remove_book_id(book_id)
@@ -216,7 +249,13 @@ def main(library_file=None,io_recording_file=None,rerecord=False):
     if library_file == None:
         library_file = os.path.normpath(C.LIBRARY_DIR + C.LIBRARY_FILE)
     if io_recording_file != None:
-        user_interface = UserInterface(library = None, io_recording_file = io_recording_file, run_recorded = True, record_additional_io = True, rerecord_output = rerecord)
+        user_interface = UserInterface(
+            library = None, 
+            io_recording_file = io_recording_file, 
+            run_recorded = True, 
+            record_additional_io = True, 
+            rerecord_output = rerecord
+        )
     else:
         user_interface = UserInterface()
     if not os.path.isfile(library_file): 
@@ -228,9 +267,9 @@ def main(library_file=None,io_recording_file=None,rerecord=False):
     while not next_command in C.QUIT:
         match next_command:
             case C.ADD_BOOK: 
-                new_isbn, new_title, new_author, new_publication_year, new_status = user_interface.ask_book_information()
+                new_isbn, new_title, new_author, new_publication_year, new_status, new_pages, new_description = user_interface.ask_book_information()
                 if new_title != None:
-                    book = Book(new_isbn, None, new_title, new_author, new_publication_year, new_status)
+                    book = Book(new_isbn, None, new_title, new_author, new_publication_year, new_status, new_pages, new_description)
                     library.add_book(book)
             case C.LIST_BOOKS | C.BORROW_RETURN_BOOK | C.REMOVE_BOOK:
                 book_list_control(library, user_interface)
